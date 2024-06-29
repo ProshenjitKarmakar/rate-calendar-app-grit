@@ -1,0 +1,8 @@
+# Ignore all files and directories
+**
+**/*.ts
+
+# Except specific files or directories
+!src/
+!public/
+!README.md

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgb(255, 247, 247);
+    box-shadow: inset 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(252, 215, 199);
+    border-radius: 5px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 10px 10px rgba(185, 185, 45, 0.59);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes containedBtnBlink {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+        border-color: white;
+        outline: 3px solid white;
+        box-shadow: 0 0 8px 8px #ffa989;
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes shareBtn {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
